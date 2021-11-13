@@ -31,6 +31,9 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "ctrl+t - jump back up the tag stack
 "g+ctrl+] 
 ":ta function_name - go to function definition
+"gf - go to file under the cursor
+"gd - go to local declaration
+"gD - go to global declaration
 
 "	Autocomplete
 " - ^x^n for JUST this file
@@ -70,4 +73,5 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "Example:
 ":vim user *.c
 ":vim user **  - find recursively in all files
+":vim user **/*.c  - find recursively in all files that ends with .c
 "press shift+* than :vim // <file> - to grep name that was under the cursor
