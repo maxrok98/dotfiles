@@ -1,6 +1,6 @@
 set nocompatible
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set number
 set splitbelow splitright
 set path+=**
@@ -64,3 +64,10 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 "	Netrw
 ":Vex - open in vertical split
+
+"				Grep
+":vim <patter> <file> | cope
+"Example:
+":vim user *.c
+":vim user **  - find recursively in all files
+"press shift+* than :vim // <file> - to grep name that was under the cursor
