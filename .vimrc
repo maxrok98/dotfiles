@@ -2,6 +2,8 @@ set nocompatible
 set tabstop=2
 set shiftwidth=2
 set number
+set incsearch
+set hlsearch  ":noh - to no highlite 
 set splitbelow splitright
 set path+=**
 set wildmenu
@@ -9,7 +11,9 @@ set wildmenu
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <C-l> <C-w>l 
+" noh - no highlight
+map <esc> :noh <CR>
 
 syntax enable
 filetype plugin on
@@ -28,6 +32,10 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 ":find [tab] - search file
 ":MakeTags - create ctags
 "ctrl+] - jump to tag under cursor
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+"ctrl+\ - open definition in a new tab
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+"alt+] - open in a vertical split tag under cursor
 "ctrl+t - jump back up the tag stack
 "g+ctrl+] 
 ":ta function_name - go to function definition
