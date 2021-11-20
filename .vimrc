@@ -14,6 +14,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l 
 " noh - no highlight
 map <esc> :noh <CR>
+nnoremap <esc>^[ <esc>^[
 
 syntax enable
 filetype plugin on
