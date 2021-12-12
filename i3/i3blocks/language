@@ -1,0 +1,11 @@
+#!/bin/bash
+
+lang=$(xkb-switch)
+
+if [[ $lang == us ]]; then
+    echo 🇺🇸
+elif [[ $lang == ru ]]; then
+    echo 🇷🇺
+elif [[ $lang == ua ]]; then
+    echo 🇺🇦
+fi

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+bri=$(light)
+
+echo $bri | awk '{ print substr( $0, 0, length($0)-3 )"%" }'
