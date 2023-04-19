@@ -7,6 +7,7 @@ set hlsearch  ":noh - to no highlite
 set splitbelow splitright
 set path+=**
 set wildmenu
+set background=dark
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
